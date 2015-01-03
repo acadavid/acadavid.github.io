@@ -88,6 +88,7 @@ a:hover {
 
 p {
   line-height: 1.5;
+  margin: 5px 0;
 }
 
 p strong {
@@ -147,22 +148,26 @@ h1 strong {
   border-width: 1px 1px 1px 0;
   background: #fff;
   height: 94%;
-  margin: 51px 47px 0;
+  margin: 30px 46px 0 0;
   padding: 21px 67px 0 0;
 }
 
 .main--container:before {
   background: #fff;
   border: 1px dotted #C0C0C0;
-  border: 1px 0;
+  border-width: 1px 0;
   content: " ";
   display: block;
   height: 92%;
   left: 0;
   position: absolute;
-  top: 51px;
+  top: 30px;
   width: 45%;
   z-index: -2;
+}
+
+.main--container h1 {
+  margin-top: 15px;
 }
 
 .side-section--container {
@@ -173,7 +178,7 @@ h1 strong {
 }
 
 .margin-90 { 
-  margin-top: 51px;
+  margin-top: 31px;
 }
 
 .side-section--heading {
@@ -211,7 +216,7 @@ h1 strong {
 }
 
 .social-list {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .social-list li {
