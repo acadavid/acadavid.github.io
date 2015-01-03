@@ -1,0 +1,13 @@
+# Site settings
+title: acadavid.me
+description: > # this means to ignore newlines until "baseurl:"
+  Software Developer in Medellín, Colombia.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://acadavid.me" # the base hostname & protocol for your site
+twitter_username: acadavid
+github_username:  acadavid
+
+# Build settings
+markdown: kramdown
+highlight: pygments
+timezone: America/New_York

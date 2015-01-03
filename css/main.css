@@ -1,0 +1,323 @@
+@import url('normalize-clearfix.css');
+
+/* Contents 
+  -Fonts
+  -Base
+  -Type
+  -Layout
+  -Appearance
+  -Media query
+*/
+
+/* Fonts */
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/Aleo-Regular-webfont.eot');
+    src: url('../fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Regular-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/Aleo-Bold-webfont.eot');
+    src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Bold-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* End fonts */
+
+/* Base */
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* end base */
+
+/* Type */
+
+body, html {
+  height: 100%;
+}
+
+body { 
+  font-size: 23px;
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  color: #858585;
+  background: #fafafa;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+  color: #575757;
+  font-family: 'aleoregular', Georgia;
+  font-weight: 400;
+}
+
+a, a:hover {
+  color: #eb5f3a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B63917;
+}
+
+p {
+  line-height: 1.5;
+}
+
+p strong {
+  font-weight: 300;
+}
+
+h1 strong {
+  font-weight: 400;
+  color: #eb5f3a;
+}
+
+/* end type */
+
+/* Layout */
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  width: 1110px;
+}
+
+.pull-left {
+  float: left ! important;
+}
+
+.pull-right {
+  float: right ! important;
+}
+
+.margin-reset {
+  margin: 0 ! important;
+}
+
+.padding-reset {
+  padding-reset: 0 ! important;
+}
+
+.main {
+  height: 98%;
+  width: 70%;
+}
+
+.side-section {
+  width: 30%;
+}
+
+/* End layout */
+
+/* Appearance */
+
+.boxed {
+  background: transparent;
+  border: 1px dotted #C0C0C0;
+}
+
+.main--container {
+  border-width: 1px 1px 1px 0;
+  background: #fff;
+  height: 94%;
+  margin: 51px 47px 0;
+  padding: 21px 67px 0 0;
+}
+
+.main--container:before {
+  background: #fff;
+  border: 1px dotted #C0C0C0;
+  border: 1px 0;
+  content: " ";
+  display: block;
+  height: 92%;
+  left: 0;
+  position: absolute;
+  top: 51px;
+  width: 45%;
+  z-index: -2;
+}
+
+.side-section--container {
+  height: 179px;
+  margin: 23px 0;
+  padding: 5px 9px;
+  text-align: center;
+}
+
+.margin-90 { 
+  margin-top: 51px;
+}
+
+.side-section--heading {
+  border-bottom: 2px solid #898989;
+  color: #575757;
+  font-size: 0.8em;
+  line-height: 1.7;
+  margin: 0;
+  position: relative;
+  text-align: left;
+}
+
+.side-section--heading:before {
+  background: #848484;
+  border-right: 5px solid white;
+  bottom: -2px;
+  content: " ";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 2px
+}
+
+.side-section--list {
+  padding: 10px 0 20px;
+}
+
+.side-section--list li {
+  margin: 7px 0 0;
+}
+
+.side-section--container h3 {
+  font-size: 0.7em;
+  text-align: left;
+}
+
+.social-list {
+  margin-top: 70px;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 26px 37px 0 0;
+}
+
+.social-list--circle {
+  display: block;
+  background: url('../images/sprites.png') 17px 15px no-repeat;
+  background-size: 282px;
+  border-radius: 50%;
+  border: 1px dotted #C0C0C0;
+  height: 90px;
+  width: 90px;
+}
+
+.social-list--circle:hover {
+  background-color: #F4F4F4;
+}
+
+.twitter {
+  background-position: -101px 15px;
+}
+
+.linkedin {
+  background-position: -158px 21px;
+  background-size: 222px;
+}
+
+/* end appearance */
+
+/* Media query */
+
+/* Narrow screens */ 
+
+@media only screen and (max-width : 1124px) {
+  .container {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width : 890px) {
+  .container {
+    width: 98%;
+  }
+  
+  .main {
+    margin: 18px 10px;
+    border-width: 1px;
+    padding: 0;
+    width: 96%;
+    height: auto;
+  }
+  
+  .main--container {
+    margin: 18px 10px;
+    border-width: 1px;
+    padding-left: 30px;
+    text-align: center;
+  }
+  
+  .main--container:before {
+    display: none;
+  }
+  
+  .social-list {
+  margin-top: 0;
+  }
+  
+  .side-section {
+    width: 100%;
+  }
+  
+  .side-section--container {
+    margin: 0 8px;
+  }
+  
+  .side-section--heading {
+    text-align: center;
+  }
+  
+  .side-section--container h3 {
+    text-align: center;
+  }
+}
+
+/* Smartphones (portrait) (ie: Galaxy 1) */
+
+@media only screen and (max-width : 490px) {
+  .main--container {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .social-list {
+    margin-top: 50px;
+  }
+  
+  .social-list li {
+    display: block;
+  }
+  
+  .social-list--circle {
+    margin: auto;
+  }
+}
+
+/* end media query */
