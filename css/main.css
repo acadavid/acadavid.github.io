@@ -146,16 +146,18 @@ h1 strong {
 }
 
 .main--container {
-  border-width: 1px 1px 1px 0;
-  background: #fff;
+  border-width: 0;
+  background: 0;
+  /* border-width: 1px 1px 1px 0;
+  background: #fff; */
   height: 94%;
   margin: 30px 46px 0 0;
   padding: 21px 67px 0 0;
 }
 
 .main--container:before {
-  background: #fff;
-  border: 1px dotted #C0C0C0;
+  /* background: #fff;
+  border: 1px dotted #C0C0C0; */
   border-width: 1px 0;
   content: " ";
   display: block;
